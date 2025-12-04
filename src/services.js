@@ -1,4 +1,5 @@
-const host = "alex-pi5";
+const host = window.location.hostname;
+const protocol = window.location.protocol;
 
 const media = {
   Jellyfin: 8096,
@@ -18,7 +19,7 @@ const sensors = {
 function populate(id, items) {
   const ul = document.getElementById(id);
   for (const [name, port] of Object.entries(items)) {
-    const url = `http://${host}:${port}`;
+    const url = `${protocol}//${host}:${port}`;
     const li = document.createElement("li");
     li.innerHTML = `<a href="${url}">${name}</a>`;
     ul.appendChild(li);
