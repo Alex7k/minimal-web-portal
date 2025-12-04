@@ -1,0 +1,15 @@
+{
+  "Media Server": {
+    "Jellyfin": ["http",8096],
+    "Jellyseer": ["http",5055],
+    "Sonarr": ["http",8989],
+    "Radarr": ["http",7878],
+    "Prowlarr": ["http",9696],
+    "qBitTorrent": ["http",8080]
+  },
+  "Arduino Sensors": {
+    "Exporter": ["http","9100/metrics"],
+    "Prometheus": ["http",9090],
+    "Grafana": ["http",3000]
+  }
+}
