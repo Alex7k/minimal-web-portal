@@ -1,8 +1,10 @@
-# minimal web-portal
+# Minimal web portal
 
-Simple dynamically built dockerized web portal.
+A minimal configurable dockerized web portal.
 
-I made this for my raspberry pi 5.
+Useful if you have many services on different ports on the same machine.
+
+Made for my Raspberry Pi 5.
 
 ![Screenshot of the web portal](img/screenshot.png)
 
@@ -14,8 +16,16 @@ I made this for my raspberry pi 5.
   curl -fsSL https://get.docker.com | sudo sh
   ```
 
-## Usage
+## Configuring Sections
+
+To configure sections / items, edit [src/sections.json](src/sections.json).
+
+## Setup
 
 ```bash
 docker compose up -d --build
 ```
+
+## Usage
+
+Open the machine's hostname or IP in a browser.
