@@ -1,7 +1,8 @@
 services:
   portal:
     build: .
-    container_name: alex-pi5-portal
+    container_name: minimal-web-portal
     ports:
       - "80:80"
     restart: unless-stopped
+
