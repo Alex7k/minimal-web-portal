@@ -1,15 +1,16 @@
 {
   "General": {
-    "Seafile": "https://alex-pi5:9080",
-    "NodeBB": "https://forum.alex7k.com"
+    "Seafile": "https://seafile.alex7k.com",
+    "NodeBB": "https://forum.alex7k.com",
+    "HedgeDoc": "https://notes.alex7k.com"
   },
   "Media Server": {
-    "Jellyfin": "http://alex-pi5:8096",
-    "Jellyseer": "http://alex-pi5:5055",
-    "Sonarr": "http://alex-pi5:8989",
-    "Radarr": "http://alex-pi5:7878",
-    "Prowlarr": "http://alex-pi5:9696",
-    "qBitTorrent": "http://alex-pi5:8080"
+    "Jellyfin": "https://watch.alex7k.com",
+    "Jellyseer": "https://jellyseerr.alex7k.com",
+    "Sonarr": "https://sonarr.alex7k.com",
+    "Radarr": "https://radarr.alex7k.com",
+    "Prowlarr": "https://prowlarr.alex7k.com",
+    "qBitTorrent": "https://qbittorrent.alex7k.com"
   },
   "Arduino Sensors": {
     "Exporter": "http://alex-pi5:9100/metrics",
