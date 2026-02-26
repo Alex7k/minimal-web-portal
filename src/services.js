@@ -4,7 +4,6 @@ async function loadServices() {
 
   const container = document.getElementById("container");
   const host = window.location.hostname;
-  const protocol = window.location.protocol;
 
   // page title
   const h1 = document.createElement("h1");
@@ -26,7 +25,9 @@ async function loadServices() {
     // fill section items
     for (const [name, dest] of Object.entries(items)) {
       const li = document.createElement("li");
-      const url = `${protocol}//${host}:${dest[1]}`;
+      const url = typeof dest === "string"
+        ? dest
+        : `${dest[0]}://${host}:${dest[1]}`;
       li.innerHTML = `<a href="${url}">${name}</a>`;
       ul.appendChild(li);
     }
